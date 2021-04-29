@@ -1,0 +1,136 @@
+/* Master Styles */
+body {
+    background-image: url(images/dark-gray-3d-abstract-structure_2560x1440_xtrafondos.com.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+   margin: 0px;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+/* Nav styles */
+.nav-wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: rgb(224, 224, 224);
+   font-family: 'Dela Gothic One', cursive;
+}
+
+.right-side {
+   display: flex;
+}
+
+.nav-wrapper > .right-side > .brand{
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 0px;
+    text-transform: uppercase;
+    border-style:solid;
+    border-color: rgb(0, 4, 255);
+    border-spacing: 5px;
+    border-width: 2px;
+    margin-left: 508%;
+    margin-right: 508%;
+
+
+}
+/* Porfolio Styles */
+
+.portfolio-items-wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-top: 5%;
+   font-family: 'Dela Gothic one', cursive;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    border-style:solid;
+    border-color: rgb(0, 4, 255);
+    border-spacing: 5px;
+    border-width: 2px;
+}
+
+.portfolio-img-background {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.img-text-wrapper2 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.logo-wrapper img {
+    width: 70%;
+    margin-bottom: -5%;
+    appearance: none;
+}
+
+.logo-wrapper2 img {
+    width: 70%;
+    margin-bottom: -5%;
+    appearance: none;
+}
+
+.img-text-wrapper .subtitle{
+    transition: .5s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(112, 112, 112);
+}
+
+.img-text-wrapper2 .subtitle{
+    transition: .5s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper2:hover .subtitle {
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(112, 112, 112);
+}
+
+.img-darken {
+    transition: .5s;
+    filter: brightness(10%);
+}
+
+.About-me-writing {
+    margin-left: 40%;
+    margin-Right: 10%;
+    color: white;
+}
