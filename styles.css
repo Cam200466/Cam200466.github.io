@@ -315,6 +315,13 @@ body {
         font-size: 30px;
     }
 }
+@media only screen and (min-width:959px) {
+    .nav-wrapper > .right-side > .brand{
+        width: 100%;
+        margin-left: 309%;
+        margin-right: 309%;
+}
+}
 @media only screen and (min-width: 1000px) {
     .nav-wrapper > .right-side > .brand{
             display:none;
