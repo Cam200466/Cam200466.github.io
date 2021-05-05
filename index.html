@@ -1,90 +1,442 @@
-<!DOCTYPE html>
-<html>
+body {
+    background-image: url(images/dark-gray-3d-abstract-structure_2560x1440_xtrafondos.com.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+   margin: 0px;
+}
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CT.designs portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-</head>
+.container {
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+}
 
-<body>
-    <div class="container">
-        <div class="nav-wrapper">
-            <div class="right-side">
-                <div class="brand">
-                    <div>CT.designs</div>
-                </div>
-            </div>
-        </div>
+.nav-wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: rgb(224, 224, 224);
+   font-family: 'Dela Gothic One', cursive;
+}
 
-        <div class="content-wrapper">
+.right-side {
+   display: flex;
+}
 
-            <div class="portfolio-items-wrapper">
+.nav-wrapper > .right-side > .brand{
+    display: none;
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-transform: uppercase;
+    border-style:solid;
+    border-color: rgb(0, 4, 255);
+    border-spacing: 5px;
+    border-width: 2px;
+    margin-left: 100%;
+    margin-right: 100%;
+}
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5%;
+    font-family: 'Dela Gothic one', cursive;
+}
+ 
+.portfolio-item-wrapper {
+     position: relative;
+     border-style:solid;
+     border-color: rgb(0, 4, 255);
+     border-spacing: 5px;
+     border-width: 2px;
+ }
+ 
+.portfolio-img-background {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portfolio-img-background2 {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image: url(images/Redbubble.png)"></div>
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.img-text-wrapper2 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.logo-wrapper img {
+    width: 70%;
+    margin-bottom: -5%;
+    appearance: none;
+}
 
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <a href="https://www.redbubble.com/people/Ctop42/shop?asc=u&ref=account-nav-dropdown"><img
-                                    src="images/redbubble logo.png"></a>
-                        </div>
+.logo-wrapper2 img {
+    width: 70%;
+    margin-bottom: -5%;
+    appearance: none;
+}
 
-                        <div class="subtitle">
-                            Redbubble Site
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background2"
-                        style="background-image: url(images/Teespring\ right\ side.png)">
-                    </div>
+.img-text-wrapper .subtitle{
+    transition: .5s;
+    font-weight: 600;
+    color: transparent;
+}
 
-                    <div class="img-text-wrapper2">
-                        <div class="logo-wrapper2">
-                            <a href="https://ctdesigns-1.creator-spring.com/"><img src="images/teespring logo.png"></a>
-                        </div>
+.img-text-wrapper:hover .subtitle {
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(112, 112, 112);
+}
 
-                        <div class="subtitle">
-                            Teespring Site
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-me">
-                <div class="about-me-img">
-                    <img src="images/CT about me.jpg">
-                </div>
-                <div class="about-paragraph">
-                    My name is Camerun Merrida, I'm a graphic designer and entrepreneur. I've been doing graphic
-                    design
-                    since I was 13 and I started selling my designs when I was 15, I'm now a senior in highschool
-                </div>
-            </div>
-            <div class="about-paragraph2">
-                My name is Camerun Merrida, I'm a graphic designer and entrepreneur. I've been doing graphic
-                design
-                since I was 13 and I started selling my designs when I was 15, I'm now a senior in highschool
-            </div>
-        </div>
-    </div>
-</body>
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+.img-text-wrapper2 .subtitle{
+    transition: .5s;
+    font-weight: 600;
+    color: transparent;
+}
 
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            portfolioItem.childNodes[1].classList.add('img-darken');
-        })
+.img-text-wrapper2:hover .subtitle {
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(112, 112, 112);
+}
 
-        portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('img-darken');
-        })
-    })
-</script>
+.img-darken {
+    transition: .5s;
+    filter: brightness(10%);
+}
 
-</html>
+.about-paragraph {
+    display: none;
+    margin-left: 35%;
+    margin-Right: 10%;
+    color: white;
+    margin-top: -20%
+}
+.about-paragraph2 {
+    display: block;
+    margin-top: 5%;
+    margin-left: 5%;
+    color: white;
+}
+.about-me-img {
+    display: none;
+    margin-top: 1%;
+    margin-left: 10%;
+    size: 20px;
+}
+
+/* Phones */
+@media only screen and (min-width:280px) {
+    .nav-wrapper > .right-side > .brand{
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+    .about-paragraph2 {
+        margin-left: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+@media only screen and (min-width:375px) {
+    .nav-wrapper > .right-side > .brand{
+        margin-left: 49%;
+        margin-right: 49%;
+    }
+    .about-paragraph2 {
+        margin-left: 2.5%;
+    }
+}
+
+@media only screen and (min-width:384px) {
+    .nav-wrapper > .right-side > .brand{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+.about-paragraph2 {
+    margin-left: 4%;
+}
+
+@media only screen and (min-width:390px) {
+    .nav-wrapper > .right-side > .brand{
+        margin-left: 52%;
+        margin-right: 52%;
+    }
+.about-paragraph2 {
+    margin-left: 3%;
+}
+
+@media only screen and (min-width:411px) {
+    .nav-wrapper > .right-side > .brand{
+        margin-left: 59%;
+        margin-right: 59%;
+    }
+.about-paragraph2 {
+    margin-left: 4%;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: -5%;
+}
+
+.logo-wrapper2 img {
+    width: 50%;
+    margin-bottom: -5%;
+}
+
+@media only screen and (min-width:412px) {
+    .nav-wrapper > .right-side > .brand{
+        margin-left: 58%;
+        margin-right: 58%;
+    }
+    .about-paragraph2 {
+        margin-left: 4%;
+    }
+    .logo-wrapper img {
+        width: 50%;
+        margin-bottom: -5%;
+    }
+
+    .logo-wrapper2 img {
+        width: 50%;
+        margin-bottom: -5%;
+}
+
+@media only screen and (min-width:414px) {
+    .nav-wrapper > .right-side > .brand{
+        margin-left: 60%;
+        margin-right: 60%;
+    }
+    .about-paragraph2 {
+        margin-left: 4.5%;
+    }
+
+    .logo-wrapper img {
+        width: 50%;
+        margin-bottom: -5%;
+    }
+    
+    .logo-wrapper2 img {
+        width: 50%;
+        margin-bottom: -5%;
+    }
+    
+}
+
+@media only screen and (min-width:540px) {
+    .nav-wrapper > .right-side > .brand{
+        margin-left: 100%;
+        margin-right: 100%;
+    }
+    .about-paragraph2 {
+        margin-left: 2%;
+    }
+
+    .logo-wrapper img {
+        width: 45%;
+        margin-bottom: -5%;
+    }
+    
+    .logo-wrapper2 img {
+        width: 45%;
+        margin-bottom: -5%;
+    }
+}
+
+/* iPad */
+@media only screen and (min-width:768px) {
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5%;
+        font-family: 'Dela Gothic one', cursive;
+     }
+     
+    .nav-wrapper > .right-side > .brand{
+        display:Block;
+        width: 100%;
+        margin-left: 250%;
+        margin-right: 250%;
+    }
+    .portfolio-img-background {
+        height: 400px;
+    }
+    .portfolio-img-background2 {
+        height: 400px;
+    }  
+    .logo-wrapper img {
+        width: 45%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: -5%;
+        margin-bottom: 5%;
+    }
+    
+    .logo-wrapper2 img {
+        width: 45%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+    .img-text-wrapper2:hover .subtitle {
+        font-size: 30px;
+    }
+
+    .img-text-wrapper:hover .subtitle {
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .nav-wrapper > .right-side > .brand{
+            display:none;
+    }
+    .logo-wrapper img {
+        width: 60%;
+        margin-top: 1%;
+        margin-bottom: -2%;
+    }
+    .logo-wrapper2 img {
+        width: 60%;
+        margin-top: 5%;
+        margin-bottom: -7%;
+    }
+    .img-text-wrapper2:hover .subtitle {
+        font-size: 40px;
+    }
+    .img-text-wrapper:hover .subtitle {
+        font-size: 40px;
+    }
+    .img-text-wrapper {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .img-text-wrapper2 {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .portfolio-img-background {
+        height: 490px;
+    }
+    .portfolio-img-background2 {
+        height: 490px;
+    }
+    .about-me-img {
+        display: block;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+}
+@media only screen and (min-width:1024px) {
+    body {
+        background-size: 3000px;
+    }
+    .nav-wrapper > .right-side > .brand{
+        border-spacing: 6px;
+        border-width: 3px;
+        width: 100%;
+        margin-left: 146%;
+        margin-right: 146%;
+        font-size: 30px;
+    }
+    .about-paragraph {
+        display: block;
+        margin-left: 43%;
+        margin-Right: 5%;
+        color: white;
+        margin-top: -40%
+    }
+    .about-paragraph2 {
+        display: none;
+        margin-top: 5%;
+        margin-left: 6%;
+        float: right;
+        color: white;
+    }
+    .about-me-img {
+        display: block;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+}
+/* Desktop and large screens */
+@media only screen and (min-width:1280px) {
+    .nav-wrapper > .right-side > .brand{
+        width: 100%;
+        margin-left: 190%;
+        margin-right: 190%;
+    }
+    .about-paragraph {
+        display: none;
+    }
+    .about-paragraph2 {
+        display: Block;
+        margin-top: -30%;
+        margin-left: 35%;
+        float: right;
+    }
+}
+@media only screen and (min-width:1366px) {
+    .nav-wrapper > .right-side > .brand{
+        width: 100%;
+        margin-left: 263%;
+        margin-right: 263%;
+        font-size: 25px;
+    }
+    .about-paragraph {
+        display: none;
+    }
+    .about-paragraph2 {
+        display: Block;
+        margin-top: -28%;
+        margin-left: 33%;
+        float: right;
+    }
+}
+@media only screen and (min-width:1880px) {
+    .nav-wrapper > .right-side > .brand{
+        display:block;
+        width: 100%;
+        margin-left: 389%;
+        margin-right: 389%;
+        font-size: 25px;
+    }
+    .about-paragraph {
+        display: block;
+    }
+    .about-paragraph2 {
+        display: Block;
+        margin-top: 1%;
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+}
+}}}}
