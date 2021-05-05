@@ -143,7 +143,7 @@ body {
 .about-paragraph2 {
     display: block;
     margin-top: 5%;
-    margin-left: 6%;
+    margin-left: 5%;
     color: white;
 }
 .about-me-img {
@@ -160,7 +160,7 @@ body {
         margin-right: 22%;
     }
     .about-paragraph2 {
-        margin-left: 3%;
+        margin-left: 2%;
         padding-bottom: 2%;
     }
 }
@@ -425,8 +425,8 @@ body {
     .nav-wrapper > .right-side > .brand{
         display:block;
         width: 100%;
-        margin-left: 383%;
-        margin-right: 383%;
+        margin-left: 389%;
+        margin-right: 389%;
         font-size: 25px;
     }
     .about-paragraph {
