@@ -349,6 +349,11 @@ body {
     .portfolio-img-background2 {
         height: 490px;
     }
+    .about-me-img {
+        display: block;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
 }
 @media only screen and (min-width:1024px) {
     body {
@@ -415,4 +420,23 @@ body {
         margin-left: 33%;
         float: right;
     }
-}}}}}
+}
+@media only screen and (min-width:1880px) {
+    .nav-wrapper > .right-side > .brand{
+        display:block;
+        width: 100%;
+        margin-left: 383%;
+        margin-right: 383%;
+        font-size: 25px;
+    }
+    .about-paragraph {
+        display: block;
+    }
+    .about-paragraph2 {
+        display: Block;
+        margin-top: 1%;
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+}
+}}}}
