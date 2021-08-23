@@ -23,7 +23,7 @@ body {
    display: flex;
 }
 
-.nav-wrapper > .right-side > .brand{
+.nav > .right-side > .brand{
     display: none;
     width: 100%;
     font-weight: 400;
