@@ -11,7 +11,7 @@ body {
    grid-template-columns: 1fr;
 }
 
-.nav-wrapper {
+.nav {
    display: flex;
    justify-content: space-between;
    padding: 20px;
@@ -155,7 +155,7 @@ body {
 
 /* Phones */
 @media only screen and (min-width:280px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         margin-left: 22%;
         margin-right: 22%;
     }
@@ -166,7 +166,7 @@ body {
 }
 
 @media only screen and (min-width:375px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         margin-left: 49%;
         margin-right: 49%;
     }
@@ -176,7 +176,7 @@ body {
 }
 
 @media only screen and (min-width:384px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         margin-left: 50%;
         margin-right: 50%;
     }
@@ -185,7 +185,7 @@ body {
 }
 
 @media only screen and (min-width:390px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         margin-left: 52%;
         margin-right: 52%;
     }
@@ -194,7 +194,7 @@ body {
 }
 
 @media only screen and (min-width:411px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         margin-left: 59%;
         margin-right: 59%;
     }
@@ -213,7 +213,7 @@ body {
 }
 
 @media only screen and (min-width:412px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         margin-left: 58%;
         margin-right: 58%;
     }
@@ -231,7 +231,7 @@ body {
 }
 
 @media only screen and (min-width:414px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         margin-left: 60%;
         margin-right: 60%;
     }
@@ -252,7 +252,7 @@ body {
 }
 
 @media only screen and (min-width:540px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         margin-left: 100%;
         margin-right: 100%;
     }
@@ -280,7 +280,7 @@ body {
         font-family: 'Dela Gothic one', cursive;
      }
      
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         display:Block;
         width: 100%;
         margin-left: 250%;
@@ -316,14 +316,14 @@ body {
     }
 }
 @media only screen and (min-width:959px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         width: 100%;
         margin-left: 309%;
         margin-right: 309%;
 }
 }
 @media only screen and (min-width: 1000px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
             display:none;
     }
     .logo-wrapper img {
@@ -366,7 +366,7 @@ body {
     body {
         background-size: 3000px;
     }
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         border-spacing: 6px;
         border-width: 3px;
         width: 100%;
@@ -396,7 +396,7 @@ body {
 }
 /* Desktop and large screens */
 @media only screen and (min-width:1280px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         width: 100%;
         margin-left: 190%;
         margin-right: 190%;
@@ -412,7 +412,7 @@ body {
     }
 }
 @media only screen and (min-width:1366px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         width: 100%;
         margin-left: 263%;
         margin-right: 263%;
@@ -429,7 +429,7 @@ body {
     }
 }
 @media only screen and (min-width:1880px) {
-    .nav-wrapper > .right-side > .brand{
+    .nav > .right-side > .brand{
         display:block;
         width: 100%;
         margin-left: 389%;
