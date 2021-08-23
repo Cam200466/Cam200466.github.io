@@ -19,6 +19,7 @@ body {
    font-family: 'Dela Gothic One', cursive;
 }
 
+
 .right-side {
    display: flex;
 }
@@ -153,6 +154,10 @@ body {
     size: 20px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 /* Phones */
 @media only screen and (min-width:280px) {
     .nav > .right-side > .brand{
@@ -278,8 +283,7 @@ body {
         grid-template-columns: 1fr 1fr;
         margin-top: 5%;
         font-family: 'Dela Gothic one', cursive;
-     }
-     
+    }
     .nav > .right-side > .brand{
         display:Block;
         width: 100%;
@@ -299,7 +303,6 @@ body {
         margin-top: -5%;
         margin-bottom: 5%;
     }
-    
     .logo-wrapper2 img {
         width: 45%;
         margin-left: 20%;
@@ -314,13 +317,37 @@ body {
     .img-text-wrapper:hover .subtitle {
         font-size: 30px;
     }
+    .about-paragraph2 {
+        display: none;
+    }
+    .about-paragraph {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        display: block;
+    }
 }
 @media only screen and (min-width:959px) {
     .nav > .right-side > .brand{
         width: 100%;
         margin-left: 309%;
         margin-right: 309%;
-}
+    }
+    .about-paragraph2 {
+        display: none;        
+    }
+
+    .about-paragraph {
+        margin-left: 48%;
+        margin-right: 5%;
+        margin-top: -40%;
+        display: block;
+    }
+    .about-me-img {
+        display: block;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
 }
 @media only screen and (min-width: 1000px) {
     .nav > .right-side > .brand{
@@ -446,4 +473,29 @@ body {
         margin-right: 10%;
     }
 }
+@media only screen and (min-width:1920px) {
+    
+    .nav > .right-side > .brand{
+        display:block;
+        width: 100%;
+        margin-left: 389%;
+        margin-right: 389%;
+        font-size: 25px;
+
+    }.menu-folder:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    }
+    .about-paragraph {
+        display: block;
+        margin-top: -21%;
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+    .about-paragraph2 {
+        display: none;
+    }
 }}}}
